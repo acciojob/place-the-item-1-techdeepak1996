@@ -1,29 +1,29 @@
-*{
-	margin:0;
-	padding:0;
+/* CSS for holder class */
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.holder div{
-	width:100px;
-	height:100px;
-	font-size:40px;
+/* CSS for item class */
+.red,
+.blue,
+.green {
+  flex: 0 1 auto;
+  margin-bottom: 10px; /* Add spacing between items */
+  padding: 10px;
+  border: 1px solid black; /* Add borders for visualization */
 }
 
-.holder{
-	display:flex;
-	gap:10px;
-	flex-wrap:wrap;
+/* Additional CSS for Overflow Example */
+.overflow-holder {
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-
-.green{
-	background-color:green;
-}
-
-.red{
-	background-color:red;
-}
-
-.blue{
-	background-color:blue;
+.overflow-item {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Add spacing between overflow items */
+  padding: 10px;
+  border: 1px solid black; /* Add borders for visualization */
 }
